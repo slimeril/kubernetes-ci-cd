@@ -18,14 +18,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-kenzan
-  labels:
-    app: hello-kenzan
 spec:
   strategy:
     type: Recreate
   selector:
     matchLabels:
-      app: hello-kanzen
+      app: hello-kenzan
   template:
     metadata:
       labels:
